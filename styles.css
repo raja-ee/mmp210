@@ -1,9 +1,9 @@
 body {
-	background: background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,130,157,1) 100%);
+	background: rgb(36,0,0);
+background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(194,52,0,1) 35%, rgba(97,0,0,1) 100%);
 
     color: white;
-    font-family: Helvetica;
+    font-family: Lucida Bright;
     font-size: 20px;
 }
 
