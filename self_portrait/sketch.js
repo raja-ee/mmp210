@@ -34,6 +34,7 @@ function draw() {
 
 	// My eyebrows
 	triangle(265, 80, 135, 100, 275, 100);
+	triangle(335, 60, 465, 80, 325, 80);
 
 	// The mouse pointer, with a color change based on the click of the mouse
 	if (mouseIsPressed) {
