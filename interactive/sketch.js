@@ -4,6 +4,7 @@ var centereye = 30;
 function setup() {
 	createCanvas(640,360);
 	noCursor();
+	// Lines 8-9 of the styles.css center the sketch. That code is from https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page?answertab=active#tab-top
 }
 
 function draw() {
@@ -19,8 +20,11 @@ function draw() {
 		centereye -= 1;
 	}
 
-	// The eyeballs
-	fill(0, 255, 0);
+	// The eyeballs (Lines 24-26 from MMP210 Class Website)
+	var r = 0; // red;
+	var g = map(mouseX, 0, width, 0, 255); // green
+	var b = map(mouseY, 0, height, 0, 255); // blue
+	fill(r, g, b);
 	circle(200, 160, eye);
 	circle(400, 160, eye);
 	fill(0);
@@ -50,12 +54,6 @@ function draw() {
 	circle(200, 160, 150); // Left lens
 	circle(400, 160, 150); // Right lens
 	line(265, 160, 335, 160); // Bridge
-
-	fill(255);
-	textSize(15);
-	strokeWeight(0.5);
-	textAlign(CENTER, BOTTOM);
-	text("Press the 'UP' and 'DOWN' arrows on your keyboard to increase and decrease eye size.", 0, 340, width);
 
 	// The mouse pointer, with a color change based on the click of the mouse
 	if (mouseIsPressed) {

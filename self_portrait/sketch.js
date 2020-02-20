@@ -4,6 +4,7 @@ function setup() {
 
 function draw() {
 	background('black');
+	noCursor();
 	
 	// The eyeballs
 	fill(0, 255, 0);
