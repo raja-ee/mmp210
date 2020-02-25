@@ -1,14 +1,22 @@
 var eye = 60;
 var centereye = 30;
+var value = 0;
+let slider;
+let glasses = 255;
 
 function setup() {
 	createCanvas(640,360);
 	noCursor();
+	slider = createSlider(0, 255, 0, 0);
+	slider.position(100, 400);
+	slider.style('width', '80px');
 	// Lines 8-9 of the styles.css center the sketch. That code is from https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page?answertab=active#tab-top
+	// Lines 9-11 & 17-18 of this code is directly modified from the p5 website
 }
 
 function draw() {
-	background(0);
+	let val = slider.value();
+	background(val);
 
 	if (keyIsDown(UP_ARROW)) {
 		eye += 1;
@@ -42,7 +50,7 @@ function draw() {
 	triangle(300, 130, 280, 230, 320, 230); // Nose
 	
 	// Part of the frame on my actual glasses
-	fill(255);
+	fill(glasses);
 	circle(265, 160, 10);
 	circle(335, 160, 10);
 	circle(135, 160, 10);
@@ -50,7 +58,7 @@ function draw() {
 
 	// My glasses
 	noFill();
-	stroke(255, 255, 255);
+	stroke(glasses);
 	circle(200, 160, 150); // Left lens
 	circle(400, 160, 150); // Right lens
 	line(265, 160, 335, 160); // Bridge
@@ -64,4 +72,12 @@ function draw() {
 	square(mouseX, mouseY, 20, 0, 20, 20, 20);
 	}
 
+}
+
+function mouseClicked() {
+  if (glasses === 255) {
+    glasses = 0;
+  } else {
+    glasses = 255;
+  }
 }
