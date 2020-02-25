@@ -9,7 +9,7 @@ function setup() {
 	createCanvas(640,360);
 	noCursor();
 	slider = createSlider(0, 255, 0, 0);
-	slider.position(100, 400);
+	slider.position(100, 360);
 	slider.style('width', '80px');
 	// Lines 8-9 of the styles.css center the sketch. That code is from https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page?answertab=active#tab-top
 	// Lines 9-11 & 17-18 of this code is directly modified from the p5 website
