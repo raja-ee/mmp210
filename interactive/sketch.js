@@ -3,6 +3,7 @@ var centereye = 30;
 var value = 0;
 let slider;
 let glasses = 255;
+// The Variable "Glasses" is usedfor more than just the glasses
 
 function setup() {
 	createCanvas(640,360);
