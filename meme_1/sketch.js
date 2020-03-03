@@ -5,7 +5,7 @@
 // global scope
 var Meme;
 var MouseIMG;
-var CNTR = 250
+var CNTR = 250;
 
 function preload() {
 	Meme = loadImage("memeBKGD.jpg");
