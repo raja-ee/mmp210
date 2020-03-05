@@ -159,9 +159,4 @@ if (mouseX > width / 2) {
 
 }
 
-	fill(0);
-	textSize(16);
-	textAlign(CENTER);
-	text("(" + floor(mouseX) + ", " + floor(mouseY) + ")", mouseX, mouseY);
-
 }
