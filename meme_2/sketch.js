@@ -21,13 +21,6 @@ function setup() {
 function draw() {
 	background('white');
 
-	fill(0);
-	textAlign(CENTER);
-	textSize(25);
-	textStyle(NORMAL);
-	textFont('Garamond');
-	text('Steryotypical Weather In New York City', 250, 40);
-
 if (mouseX > width / 2) {
 	
 	// Sky
@@ -37,8 +30,11 @@ if (mouseX > width / 2) {
 
 	// Sun
 	fill(128, 219, 255);
-	stroke(255);
 	ellipse(60, 120, 100, 100);
+
+	triangle(10, 120, 60, 220, 110, 120);
+	triangle(10, 120, 30, 200, 60, 120);
+	triangle(60, 120, 90, 190, 110, 120);
 
 } else {
 
@@ -159,4 +155,14 @@ if (mouseX > width / 2) {
 
 }
 
+    fill(255);
+    noStroke();
+    rect(0, 0, width, 60);
+
+    fill(0);
+	textAlign(CENTER);
+	textSize(25);
+	textStyle(NORMAL);
+	textFont('Garamond');
+	text('Steryotypical Weather In New York City', 250, 40);
 }
