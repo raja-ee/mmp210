@@ -29,7 +29,7 @@ if (mouseX > width / 2) {
 	rect(0, 60, width, 440);
 
 	// Sun
-	fill(128, 219, 255);
+	fill(0, 191, 255);
 	ellipse(60, 120, 100, 100);
 
 	triangle(10, 120, 60, 220, 110, 120);
