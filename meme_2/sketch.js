@@ -123,9 +123,6 @@ if (mouseX > width / 2) {
 	textStyle(NORMAL);
 	textFont('Garamond');
 	text('Ayo it is mad COLD outside!', 257, 155);
-
-
-
 } else {
 
 	// The Short Jeans
@@ -165,4 +162,6 @@ if (mouseX > width / 2) {
 	textStyle(NORMAL);
 	textFont('Garamond');
 	text('Steryotypical Weather In New York City', 250, 40);
+
+
 }
