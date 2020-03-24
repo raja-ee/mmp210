@@ -6,6 +6,9 @@
 var CM1;
 var CM2;
 var CM3;
+var x1 = 100;
+var x2 = 499;
+var x3 = 250;
 
 function preload() {
 	CM1 = loadImage('CM1.jpg');
@@ -21,7 +24,7 @@ function setup() {
 function draw() {
 	background('white');
 
-	fill(20,21,24);
+	fill(3, 1, 0);
 	noStroke();
 	rect(0, 120, width, 380);
 
@@ -39,7 +42,32 @@ function draw() {
 	text('The Comment Section:', 15, 100);
 
 	// The comments
+	image(CM1, x1, 160, 450, 60)
+	image(CM2, x2, 260, 450, 60)
+	image(CM3, x3, 360, 450, 60)
 
+	if (mouseIsPressed) {
+		fill(255);
+		textAlign(CENTER);
+		textSize(24);
+		textStyle(NORMAL);
+		textFont('Garamond');
+		text('PAUSED', 250, 480);
+  } else {
+    x1 += 2;
+    x2 += 2;
+    x3 += 2;
+  }
 	
+	if (x1 > width) {
+		x1 = -450;
+	}
 
+	if (x2 > width) {
+		x2 = -450;
+	}
+
+	if (x3 > width) {
+		x3 = -450;
+	}
 }
